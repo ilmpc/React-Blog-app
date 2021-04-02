@@ -1,0 +1,1 @@
+export const ARTICLE_EDIT = 'ARTICLE_EDIT'

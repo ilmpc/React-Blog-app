@@ -2,7 +2,7 @@ import React from 'react'
 
 import RegisterFormComponent from '../components/RegisterForm'
 
-import services from '../services'
+import services from '../ducks/article/services'
 
 const RegisterFormContainer = (
 ) => {

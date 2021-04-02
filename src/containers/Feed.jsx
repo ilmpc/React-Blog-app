@@ -3,7 +3,7 @@ import React from 'react'
 import FeedComponent from '../components/Feed'
 import LoaderComponent from '../components/Loader'
 
-import services from '../services'
+import services from '../ducks/article/services'
 
 const FeedContainer = (
 ) => {

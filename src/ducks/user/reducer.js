@@ -1,6 +1,6 @@
 import { ACTION_LOGIN, ACTION_LOGOUT, ACTION_RENAME } from './types'
 
-export const reducer = (
+const reducer = (
   state = { user: null },
   action
 ) => {
@@ -18,3 +18,5 @@ export const reducer = (
       return state
   }
 }
+
+export default reducer

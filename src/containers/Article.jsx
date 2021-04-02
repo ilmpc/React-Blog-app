@@ -1,18 +1,22 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 import ArticleComponent from '../components/Article'
 import LoaderComponent from '../components/Loader'
+import { articleSelectors } from '../ducks/article'
+import services from '../ducks/article/services'
 
-import services from '../services'
-
-const ArticleContainer = (
-) => {
+/*
   const [article, setArticle] = React.useState()
-  const { id } = useParams()
-  React.useEffect(() => {
+React.useEffect(() => {
     setArticle(services.fetchArticle(id))
-  }, [setArticle, services.fetchArticle, id])
+  }, [setArticle, services.fetcArticle, id])
+*/
+
+const ArticleContainer = () => {
+  const { id } = useParams()
+  const article = useSelector(articleSelectors.createById(id))
 
   return (
     article

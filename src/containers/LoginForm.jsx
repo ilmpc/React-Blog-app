@@ -4,7 +4,7 @@ import LoginFormComponent from '../components/LoginForm'
 
 import store from '../store'
 import { createLoginAction } from '../store/actions'
-import services from '../services'
+import services from '../ducks/user/services'
 
 const LoginFormContainer = (
 ) => {
