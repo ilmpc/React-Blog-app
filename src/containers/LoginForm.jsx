@@ -2,6 +2,8 @@ import React from 'react'
 
 import LoginFormComponent from '../components/LoginForm'
 
+import store from '../store'
+import { createLoginAction } from '../store/actions'
 import services from '../services'
 
 const LoginFormContainer = (
@@ -10,8 +12,9 @@ const LoginFormContainer = (
 
   const handleSubmit = React.useCallback((event) => {
     event.preventDefault()
-    services.loginUser(formData.username, formData.password)
-  }, [services.loginUser, formData])
+    const user = services.loginUser(formData.username, formData.password)
+    store.despatch(createLoginAction(user))
+  }, [store, services.loginUser, formData])
 
   const handleChange = React.useCallback((event) => {
     const name = event.target.name
