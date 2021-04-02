@@ -5,8 +5,8 @@ import LoaderComponent from '../components/Loader'
 
 import services from '../services'
 
-const FeedContainer = ({
-}) => {
+const FeedContainer = (
+) => {
   const [articles, setArticles] = React.useState()
 
   React.useEffect(() => {

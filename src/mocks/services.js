@@ -3,7 +3,8 @@ export default {
   registerUser: () => null,
   fetchUser: () => null,
   fetchArticle: () => null,
-  fetchArticles: () => null
+  fetchArticles: () => null,
+  fetchBlogName: () => null
 }
 
 const fetchUser = () => ({

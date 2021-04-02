@@ -11,7 +11,7 @@ const ArticleContainer = ({
   const [article, setArticle] = React.useState()
 
   React.useEffect(() => {
-    setArticles(services.fetchArticle(id))
+    setArticle(services.fetchArticle(id))
   }, [setArticle, services.fetchArticle, id])
 
   return (
