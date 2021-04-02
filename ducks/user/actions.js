@@ -1,21 +1,20 @@
-import * as Types from './types'
+import { ACTION_LOGIN, ACTION_LOGOUT, ACTION_RENAME } from './types'
 
 export const createLoginAction = (
   user
 ) => ({
-  type: Types.ACTION_LOGIN,
+  type: ACTION_LOGIN,
   user
 })
 
 export const createLogoutAction = (
-
 ) => ({
-  type: Types.ACTION_LOGOUT
+  type: ACTION_LOGOUT
 })
 
 export const createRenameAction = (
   username
 ) => ({
-  type: Types.ACTION_RENAME,
+  type: ACTION_RENAME,
   username
 })

@@ -29,3 +29,5 @@ ProfileMenuComponent.propTypes = {
     username: PropTypes.string
   }).isRequired
 }
+
+export default ProfileMenuComponent

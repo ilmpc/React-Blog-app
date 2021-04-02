@@ -13,7 +13,7 @@ const LoginFormContainer = (
   const handleSubmit = React.useCallback((event) => {
     event.preventDefault()
     const user = services.loginUser(formData.username, formData.password)
-    store.despatch(createLoginAction(user))
+    store.dispatch(createLoginAction(user))
   }, [store, services.loginUser, formData])
 
   const handleChange = React.useCallback((event) => {
