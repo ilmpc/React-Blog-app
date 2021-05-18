@@ -27,7 +27,7 @@ const FeedComponent = ({ articles }) => (
       articles.length !== 0
         ? articles.map((article) =>
           <CardComponent article={article} key={article.id} />
-          )
+        )
         : 'Error!'
     }
   </CardGroup>
