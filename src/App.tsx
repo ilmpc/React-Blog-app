@@ -8,7 +8,7 @@ import FeedContainer from './containers/Feed'
 import ArticleContainer from './containers/Article'
 import RegisterFormContainer from './containers/RegisterForm'
 
-import store from './store'
+import { store } from './store'
 
 export default function App () {
   return (

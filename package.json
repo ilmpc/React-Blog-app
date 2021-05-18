@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "ts-standard": "^10.0.0"
+    "ts-standard": "^10.0.0",
+    "eslint": "^6.1.0"
   }
 }

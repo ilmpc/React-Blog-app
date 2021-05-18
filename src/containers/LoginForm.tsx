@@ -2,7 +2,7 @@ import React from 'react'
 
 import LoginFormComponent from '../components/LoginForm'
 
-import store from '../store'
+import { store } from '../store'
 import { createLoginAction } from '../store/actions'
 import services from '../ducks/user/services'
 
